@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build":"npm instal --prefix server && npm instal --prefix client && npm run build --prefix client",
+    "build":"npm run build --prefix client",
+    "install":"npm instal --prefix server && npm instal --prefix client",
     "start":"npm run start --prefix server"
   }
 }
