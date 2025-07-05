@@ -9,7 +9,6 @@ const orderRoutes = require('./routes/orderRoutes')
 const path = require("path")
 
 dotenv.config();
-const __dirname = path.resolve()
 
 const app = express();
 
