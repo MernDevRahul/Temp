@@ -32,6 +32,8 @@ app.use("/api/cart",cartRoutes)
 app.use('/api/order',orderRoutes)
 
 if(process.env.NODE_ENV=="prod"){
+    console.log(process.env.NODE_ENV);
+    
     app.use(express.static(path.join(__dirname,"../client/dist")));
 
     app.get("*",(req,res)=>{
