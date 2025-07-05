@@ -27,7 +27,7 @@ const Order = () => {
       });
 
       if (response.status === 200) {
-        await axios.delete('/cart/remove');
+        await axios.delete('/cart/remove-all');
         setAddress("");
         navigate('/home')
         // Optionally: clear cart from Redux
