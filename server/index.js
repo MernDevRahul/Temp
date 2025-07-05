@@ -22,10 +22,6 @@ app.use(express.json());
 connectDB();
 
 
-app.get('/',(req,res)=>{
-    res.send("Hello Backend")
-})
-
 app.use("/api/auth",userRoutes);
 app.use("/api/product",productRoutes)
 app.use("/api/cart",cartRoutes)

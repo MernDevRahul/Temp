@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
 import AddProductForm from './components/AddProductForm'
@@ -14,7 +14,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<Login/>}/>
+      <Route path='/' element={<Navigate to="/login" replace />} />
+      <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/home' element={
         <>
